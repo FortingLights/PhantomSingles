@@ -1,0 +1,215 @@
+/* General body styling with gradient background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(120deg, #121212, #610101, #1c1c1c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Animation for the gradient background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#album {
+    text-align: center;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 600px;
+}
+
+.album-cover img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.album-cover img:hover {
+    transform: scale(1.05);
+}
+
+#album-title {
+    font-size: 36px;
+    margin: 15px 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.now-playing {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.now-playing span {
+    font-weight: bold;
+    color: #f700ce; /* Highlight the current track title */
+}
+
+.now-playing h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #1db954; /* Bright green for the song name */
+}
+
+#track-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.track-item {
+    background-color: #282828;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.track-item:hover {
+    background-color: #060606;
+    transform: scale(1.02);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.control-button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-button:hover {
+    background-color: #1aa34a;
+    transform: scale(1.1);
+}
+
+.control-button:focus {
+    outline: none;
+}
+
+.control-button:disabled {
+    background-color: #555555;
+    cursor: not-allowed;
+}
+
+/* Playbar (progress bar) */
+#playbar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #1db954, #191414);
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+#playbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+#playbar::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+#playbar::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+#playbar::-moz-range-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Volume Control (slider) */
+#volume {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #1db954, #191414);
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+#volume::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+#volume::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+#volume::-moz-range-thumb:hover {
+    transform: scale(1.2);
+}

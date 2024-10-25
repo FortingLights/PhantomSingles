@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Heartbeats Singles</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div id="album">
+        <div class="album-cover">
+            <img src="file:///D:/PBEATS%20SITE/Singles%20site/Singles.png" alt="Album Cover">
+        </div>
+        <h1 id="album-title">Phantom Heartbeats</h1>
+        <h1 id="album-title">Singles</h1>
+        <h2 id="now-playing">Now Playing: <span id="current-track">None</span></h2>
+        <div id="track-list">
+            <!-- Track items will be populated here -->
+        </div>
+        <div class="controls">
+            <button id="prev" class="control-button" aria-label="Previous Track">&#9664;&#9664;</button>
+            <button id="play" class="control-button" aria-label="Play/Pause">&#9654;</button>
+            <button id="next" class="control-button" aria-label="Next Track">&#9654;&#9654;</button>
+            <button id="shuffle" class="control-button" aria-label="Shuffle">&#8591;</button> <!-- Shuffle Button -->
+        </div>
+
+        <!-- Playbar for track progress -->
+        <div class="playbar-container">
+            <input type="range" id="playbar" value="0" step="1" min="0" max="100" class="playbar">
+        </div>
+
+        <!-- Volume Control -->
+        <div class="volume-control">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" value="100" step="1" min="0" max="100" class="volume-slider">
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
