@@ -13,7 +13,7 @@ let shuffledIndices = []; // Array to hold shuffled track indices
 
 // Track details
 const tracks = [
-    { title: "Lost Road", src: "file:///D:/Zen%C3%A9k/Lost%20Road.wav" },
+    { title: "Lost Road", src: "Songs/Lost Road.mp3" },
 ];
 
 let currentTrackIndex = 0;
